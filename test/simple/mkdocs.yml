@@ -1,0 +1,20 @@
+site_name: JConfig Plugin Test
+site_description: Test for JConfig Plugin
+copyright: copyright {{ year }}
+docs_dir: docs
+theme: readthedocs
+
+nav:
+  - Main: index.md
+
+extra:
+  year: 2023
+  test: we are in {{ year }}
+
+plugins:
+  - search
+  - jconfig:
+      items:
+        - copyright
+        - extra.test
+  - macros

@@ -1,0 +1,1 @@
+# mkdocs-jconfig-plugin
