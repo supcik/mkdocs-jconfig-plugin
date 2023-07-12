@@ -1,5 +1,1 @@
 # Hello
-
-{{ test }}
-
-Year : {{ year }}

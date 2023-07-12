@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "mkdocs-jconfig-plugin"
-version = "0.1.0"
-description = "An MkDocs plugin to ..."
+version = "0.1.1"
+description = "An MkDocs plugin to process configuration items with Jinja2"
 authors = ["Jacques Supcik <jacques.supcik@hefr.ch>"]
 repository = "https://github.com/supcik/mkdocs-jconfig-plugin"
 license = "Apache-2"
@@ -29,6 +29,7 @@ black = "^23.3.0"
 pylint = "^2.17.4"
 isort = "^5.12.0"
 pre-commit = "^3.3.3"
+mkdocs-calendar-plugin = "^0.3.0"
 
 [build-system]
 requires = ["poetry-core"]

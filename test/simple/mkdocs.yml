@@ -1,20 +1,15 @@
 site_name: JConfig Plugin Test
 site_description: Test for JConfig Plugin
-copyright: copyright {{ year }}
+copyright: copyright {{ cal.today.year }} The Authors
 docs_dir: docs
 theme: readthedocs
 
 nav:
   - Main: index.md
 
-extra:
-  year: 2023
-  test: we are in {{ year }}
-
 plugins:
   - search
+  - calendar
   - jconfig:
       items:
         - copyright
-        - extra.test
-  - macros
