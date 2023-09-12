@@ -5,26 +5,12 @@ repos:
       - id: check-yaml
       - id: end-of-file-fixer
       - id: trailing-whitespace
-  - repo: local
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.0.287
     hooks:
-      - id: isort
-        name: isort
-        entry: poetry run isort
-        language: system
-        types: [python]
-        args: ["."]
+      - id: ruff
+        args: [--fix, --exit-non-zero-on-fix]
   - repo: https://github.com/psf/black
     rev: 22.10.0
     hooks:
       - id: black
-  - repo: local
-    hooks:
-      - id: pylint
-        name: pylint
-        entry: poetry run pylint
-        language: system
-        types: [python]
-        args: [
-            "-rn", # Only display messages
-            "-sn", # Don't display the score
-          ]
